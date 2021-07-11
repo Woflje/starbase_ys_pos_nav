@@ -1,0 +1,19 @@
+q=1000
+:pos="\nX: "+:x/q*q+"\nY: "+:y/q*q+"\nZ: "+:z/q*q+"\nV: "+:vel goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Chip: Basic
+
