@@ -5,3 +5,15 @@ pc=pm+ps/cl pu=p p=p+2*(Tu<:TD) Tu=:TD :p=pc*(p*(p<3)-(pu!=p)*(p==3))
 :ya=pc*((p-6)*(p>4)*(p<8)-(pu!=p)*(p>8)) :p=0 p+=2*(p==3) i++ ku=0
 :ya=0 ip=(i<10)*(p>8) cl=cl+15*ip goto2+(p<8)+5*ip*(pc<5) :Nav=(1-:rt)
 :fwd=100 ww+=(:TD>Tu) Tu=:TD :Nav=(:TD<:OK) goto7-5*(ww>5)-6*:rt
+
+
+
+
+
+
+
+
+
+
+//Chip: Basic
+
