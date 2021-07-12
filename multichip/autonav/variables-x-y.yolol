@@ -1,0 +1,19 @@
+:n=0.1 :Bx=9472.649*:n :By=4904.641*:n :Bz=799.516*:n :Cx=19833*:n
+:a=:Cx*:Cx :Dx=29159.555*:n :Dy=50445.073*:n :b=2*:Cx :OK=200^2 :rt=0
+:c=:Dx*:Dx+:Dy*:Dy :d=:Dx/:Cx :e=2*:Dy :f=:Bx*:Bx+:By*:By+:Bz*:Bz
+:g=:Bx/:Cx :h=:Dx/:Cx :k=:By/:Dy :q=1000 :m=2*:Bz :oz=0 :r=1000000
+
+:tx=0 :ty=0 :tz=0
+
+dA=:dA dC=:dC a=:a b=:b n=:n ox=:ox d=:d dD=:dD e=:e oy=:oy
+:x=(dA-dC+a)/(b*n)+ox :y=-(dA+c-((dA-dC+a)*d)-dD)/(e*n)+oy goto9-8*:rt
+
+
+
+
+
+
+
+
+//Chip: Basic
+
