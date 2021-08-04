@@ -16,5 +16,5 @@ pc=pm+ps/cl pu=p p=p+2*(Tu<T) Tu=T :p=pc*(p*(p<3)-(pu!=p)*(p==3))
 :y=pc*((p-6)*(p>4)*(p<8)-(pu!=p)*(p>8)) :p=0 p+=2*(p==3) i++ ku=0
 :y=0 ip=(i<10)*(p>8) cl=cl+15*ip goto6+(p<8)+12*ip*(pc<5)
 :fwd=100*v :C=4*(1-v) u=0 no=1-v v=0 w=1 :T=T>TD goto7-6*(:T<1)-6*no
-// YS.pos.nav v0.0.0.1
+// YS.pos.nav.alpha v0.0.0.2
 // Developed by Senkii & TheLegendOfWolf
