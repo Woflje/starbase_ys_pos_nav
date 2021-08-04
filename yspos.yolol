@@ -1,9 +1,9 @@
-n=0.1 Bx=9472.649*n By=4904.641*n Bz=799.516*n Cx=19833*n a=Cx^2
-Dx=29159.555*n Dy=50445.073*n b=2*Cx c=Dx^2+Dy^2 d=Dx/Cx e=2*Dy
+n=0.1 Bx=?*n By=?*n Bz=?*n Cx=?*n a=Cx^2
+Dx=?*n Dy=?*n b=2*Cx c=Dx^2+Dy^2 d=Dx/Cx e=2*Dy
 f=Bx^2+By^2+Bz^2 g=Bx/Cx h=Dx/Cx k=By/Dy q=1000 m=2*Bz
-ox=-9940 oy=4900 oz=0 r=1000000
-s="station_" m1=s+"hq_imperial_a" m2=s+"capital_imperial_a"
-m3=s+"hq_kingdom_a" m4=s+"proving_grounds" :tm=m4
+ox=? oy=? oz=? r=1000000
+s="?" m1=s+"?" m2=s+"?"
+m3=s+"?" m4=s+"?" :tm=m4
 cd=md md=r-:s :tm=m2 dD=(md*n)^2
 z=-(dA+f-(dA-dC+a)*g-(dA+c-(dA-dC+a)*h-dD)*k-dB)/(m*n)+oz
 cb=mb mb=r-:s :tm=m1 dB=((mb+(mb-cb)*3/4)*n)^2
@@ -11,5 +11,5 @@ x=(dA-dC+a)/(b*n)+ox y=-(dA+c-((dA-dC+a)*d)-dD)/(e*n)+oy
 ca=ma ma=r-:s :tm=m3 dA=((ma+(ma-ca)*2)*n)^2
 cc=mc mc=r-:s :tm=m4 dC=((mc+(mc-cc)/4)*n)^2
 :pos="\nX: "+x/q*q+"\nY: "+y/q*q+"\nZ: "+z/q*q goto7
-// YS.pos.alpha v0.0.0.2
+// YS.pos v0.0.0.2
 // Developed by Senkii & TheLegendOfWolf
