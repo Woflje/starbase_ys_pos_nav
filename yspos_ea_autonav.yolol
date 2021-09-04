@@ -1,0 +1,20 @@
+ox=0 oy=0 oz=0 s="Origin_" pm=1 ps=99 cl=1 nv=1.6
+r=1000000 b=413.449 c=60467+ox l=-685.705 e=582.957 f=678.088 q=1000
+g=590.574 h=-27703+oy i=5.878 j=382.042 k=-4584.5+oz md=0 a=100*r
+m1=s+"west" m2=s+"east" m3=s+"north" m4=s+"south" :tm=m4 TD=600^2
+tx=0 ty=0 tz=0
+u=0 p=-1 i=0 v=1 w=0 
+cd=md md=r-:s :tm=m2 d=(md)^2 wu=10*(T2!=:T) T2=:T ku+=o u-=w*T<To
+x=b*(dA-dB)/a+c y=(l*dA-e*dB+f*dC+g*d)/a+h z=(i*(dB-dA)+j*(d-dC))/a+k
+cb=mb mb=r-:s :tm=m1 dB=((mb+(mb-cb)*3/4))^2 ok=(T^0.5)/q*q u=u*u>0
+ve=((x-xo)^2+(y-yo)^2+(z-zo)^2)/nv xo=x yo=y zo=z kz=(ku>2) goto11-wu
+ca=ma ma=r-:s :tm=m3 dA=((ma+(ma-ca)*2))^2 v5="\nT: "+ok+"\nV: "+ve
+To=T T=(tx-x)^2+(ty-y)^2+(tz-z)^2 u+=w*T>To l=To==T goto13+5*(T<TD)*:T
+cc=mc mc=r-:s :tm=m4 dC=((mc+(mc-cc)/4))^2 goto14+4*(u>5)*:T nv=1.6
+:pos="\nX: "+x/q*q+"\nY: "+z/q*q+"\nZ: "+y/q*q+"\n"+v5 goto7+8*kz*:T*v
+pc=pm+ps/cl pu=p p=p+2*(Tu<T) Tu=T :p=pc*(p*(p<3)-(pu!=p)*(p==3))
+:y=pc*((p-6)*(p>4)*(p<8)-(pu!=p)*(p>8)) :p=0 p+=2*(p==3) n++ ku=0
+:y=0 ip=(n<10)*(p>8) cl=cl+15*ip goto6+(p<8)+12*ip*(pc<5) nv=2.2
+:fwd=100*v :C=4*(1-v) u=0 no=1-v v=0 w=1 :T=T>TD goto7-6*(:T<1)-6*no
+// YS.pos EA Autonav v1.0.0
+// Developed by Senkii & TheLegendOfWolf
