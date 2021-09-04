@@ -1,0 +1,20 @@
+:tx=0 :ty=0 :tz=0 goto1+:TD<:OK
+
+:tx=0 :ty=0 :tz=0 goto2+:TD<:OK-:rt
+
+:tx=0 :ty=0 :tz=0 goto4+:TD<:OK-2*:rt
+
+:tx=0 :ty=0 :tz=0 goto6+:TD<:OK-3*:rt
+
+:tx=0 :ty=0 :tz=0 goto8+:TD<:OK-4*:rt
+
+:tx=0 :ty=0 :tz=0 goto10+:TD<:OK-5*:rt
+
+:tx=0 :ty=0 :tz=0 goto12+:TD<:OK-6*:rt
+
+:tx=0 :ty=0 :tz=0 goto14+:TD<:OK-7*:rt
+
+
+//Chip: Basic
+// YSPos EA Autonav v1.0.1 -MC- Destinations
+// Developed by Senkii & TheLegendOfWolf
