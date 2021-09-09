@@ -319,7 +319,7 @@ Then the X-coordinate can be found by evaluating `Sphere_A_C = Sphere_B_C`, and 
 
 Here, things get difficult as C and D do not share the same X-Coordinate in our coordinate system. Luckily, stating that C and D share the same Z-Coordinate, the Z-Axis will be pointing roughly towards the belt, which is convenient. If we also state that their Z-Coordinate is positive, we can use an algorithm to find a Cz=Dz such that distance(C to D) corresponds to the measured value. The algorithm used for this can be found in `/data/find_coords.py`. The algorithm starts from a guessed value of Z and evaluates the increasing Z value each time by calculating the Y-Coordinates of C and D with it and evaluating if distance(C to D) is as close to the measured value as possible.
 
-Then, all the coordinates of the transmitters have been calculated or found and can be seen in B11 to E13. This creates the following model:
+Then, all the coordinates of the transmitters have been calculated or found and can be seen in B11 to E13. This creates the following model:<br>
 ![Beautiful Gif that does not work now for some reason :/](https://i.imgur.com/cvCRb1k.gif)
 
 To play around with it or have a closer look, go to [GeoGebra](https://www.geogebra.org/calculator) and open the `/data/model_geogebra.ggb` file.
