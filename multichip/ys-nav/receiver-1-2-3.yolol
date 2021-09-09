@@ -1,4 +1,4 @@
-r=:r
+r=1000000
 :dA=(r-:s1)*(r-:s1) :dB=(r-:s2)*(r-:s2) :dC=(r-:s3)*(r-:s3) goto2-:rt
 
 
@@ -16,5 +16,5 @@ r=:r
 
 
 // Chip: Basic
-// YSPos EA v1.0.1 -MC- Receiver 1 2 3
+// YS.Nav EA v1.0.2 -MC- Receiver 1 2 3
 // Developed by Senkii & TheLegendOfWolf

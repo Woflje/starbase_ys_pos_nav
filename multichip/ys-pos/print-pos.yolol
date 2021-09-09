@@ -1,0 +1,20 @@
+q=1000 x="\nYS.Pos\nX: " y="\nY: " z="\nZ: " v="\nVel:"
+:Pos=x+:x/q*q+y+:y/q*q+z+:z/q*q+v+:v+" m/s" goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Chip: Basic
+// YS.Pos EA v1.0.2 -MC- Print Position
+// Developed by Senkii & TheLegendOfWolf

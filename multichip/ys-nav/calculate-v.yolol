@@ -1,0 +1,20 @@
+xo=:x yo=:y zo=:z q=1000 t=0.208*q
+:v=((:x-xo)^2 +(:y-yo)^2 +(:z-zo)^2)^0.5/t*q xo=:x yo=:y zo=:z goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Chip: Advanced
+// YS.Nav EA v1.0.2 -MC- Calculate Velocity
+// Developed by Senkii & TheLegendOfWolf

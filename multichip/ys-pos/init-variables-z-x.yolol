@@ -1,0 +1,20 @@
+ox=0 oz=0
+b=413.449 c=60467+ox l=582.633 e=685.324 f=677.729 a=100000000
+g=590.229 h=27687+oz
+
+:tx=0 :ty=0 :tz=0
+
+:z=(l*:dA+e*:dB-f*:dC-g*:dD)/a+h :x=b*(:dA-:dB)/a+c goto7-6*:rt
+
+
+
+
+
+
+
+
+
+
+// Chip: Basic
+// YS.Pos EA v1.0.2 -MC- Initialize Variables, Calculate Z, X
+// Developed by Senkii & TheLegendOfWolf

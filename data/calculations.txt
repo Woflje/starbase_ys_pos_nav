@@ -1,0 +1,67 @@
+A=East;
+B=West;
+C=North;
+D=South;
+
+Ax=0;
+Ay=0;
+Az=0;
+Bx=something;
+By=0;
+Bz=0;
+Cx=something;
+Cy=something;
+Cz=something;
+Dx=something;
+Dy=something;
+Dz=something;
+
+X^2 + Y^2 + Z^2 + Ax^2 + Ay^2 + Az^2 -2*X*Ax -2*Y*Ay -2*Z*Az -dA^2 = 0 %A
+X^2 + Y^2 + Z^2 + Bx^2 + By^2 + Bz^2 -2*X*Bx -2*Y*By -2*Z*Bz -dB^2 = 0 %B
+X^2 + Y^2 + Z^2 + Cx^2 + Cy^2 + Cz^2 -2*X*Cx -2*Y*Cy -2*Z*Cz -dC^2 = 0 %C
+X^2 + Y^2 + Z^2 + Dx^2 + Dy^2 + Dz^2 -2*X*Dx -2*Y*Dy -2*Z*Dz -dD^2 = 0 %D
+
+X^2 + Y^2 + Z^2 -dA^2 = 0 %A
+X^2 + Y^2 + Z^2 + Bx^2 -2*X*Bx -dB^2 = 0 %B
+X^2 + Y^2 + Z^2 + (Cx^2 + Cy^2 + Cz^2) -2*X*Cx -2*Y*Cy -2*Z*Cz -dC^2 = 0 %C
+X^2 + Y^2 + Z^2 + (Dx^2 + Dy^2 + Dz^2) -2*X*Dx -2*Y*Dy -2*Z*Dz -dD^2 = 0 %D
+
+-dA^2 -Bx^2 +2*X*Bx +dB^2 = 0 %A=B Plane
+-dA^2 -(Cx^2 + Cy^2 + Cz^2) +2*X*Cx +2*Y*Cy +2*Z*Cz +dC^2 = 0 %A=C Plane
+-dA^2 -(Dx^2 + Dy^2 + Dz^2) +2*X*Dx +2*Y*Dy +2*Z*Dz +dD^2 = 0 %A=D Plane
+
+-Bx^2 +2*X*Bx +dB^2 +Cx^2 + Cy^2 + Cz^2 -2*X*Cx -2*Y*Cy -2*Z*Cz -dC^2 = 0 %A=B = A=C Line
+-Bx^2 +2*X*Bx +dB^2 +Dx^2 + Dy^2 + Dz^2 -2*X*Dx -2*Y*Dy -2*Z*Dz -dD^2 = 0 %A=B = A=D Line
+
+
+2*X*Bx = dA^2 +Bx^2 -dB^2
+X = (dA^2 +Bx^2 -dB^2)/(2*Bx)
+
+
+-2*Z*Cz = Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +2*Y*Cy +dC^2
+Z = (Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cz) +(2*Y*Cy)/(-2*Cz)
+
+-2*Z*Dz = Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +2*Y*Dy +dD^2
+Z = (Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dz) +(2*Y*Dy)/(-2*Dz)
+
+(Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cz) +(2*Y*Cy)/(-2*Cz) = (Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dz) +(2*Y*Dy)/(-2*Dz)
+(2*Y*Cy)/(-2*Cz) - (2*Y*Dy)/(-2*Dz) = (Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dz) - (Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cz)
+Y*((2*Cy)/(-2*Cz)-(2*Dy)/(-2*Dz)) = (Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dz) - (Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cz)
+Y = ((Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dz) - (Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cz))/((2*Cy)/(-2*Cz)-(2*Dy)/(-2*Dz))
+Y = ((Bx^2 +X*(2*Dx - 2*Bx) -dB^2 -Dx^2 -Dy^2 -Dz^2 +dD^2)/(-2*Dz) - (Bx^2 +X*(2*Cx - 2*Bx) -dB^2 -Cx^2 -Cy^2 -Cz^2 +dC^2)/(-2*Cz))/((2*Cy)/(-2*Cz)-(2*Dy)/(-2*Dz))
+Y = ((Bx^2 +((dA^2 +Bx^2 -dB^2)/(2*Bx))*(2*Dx - 2*Bx) -dB^2 -Dx^2 -Dy^2 -Dz^2 +dD^2)/(-2*Dz) - (Bx^2 +((dA^2 +Bx^2 -dB^2)/(2*Bx))*(2*Cx - 2*Bx) -dB^2 -Cx^2 -Cy^2 -Cz^2 +dC^2)/(-2*Cz))/((2*Cy)/(-2*Cz)-(2*Dy)/(-2*Dz))
+Y = ((Cx^2 - Bx^2 + Cy^2 + Cz^2 + dB^2 - dC^2 + ((2*Bx - 2*Cx)*(Bx^2 + dA^2 - dB^2))/(2*Bx))/(2*Cz) - (Dx^2 - Bx^2 + Dy^2 + Dz^2 + dB^2 - dD^2 + ((2*Bx - 2*Dx)*(Bx^2 + dA^2 - dB^2))/(2*Bx))/(2*Dz))/(Cy/Cz - Dy/Dz)
+
+
+-2*Y*Cy = Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +2*Z*Cz +dC^2
+Y = (Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cy) +(2*Z*Cz)/(-2*Cy)
+
+-2*Y*Dy = Bx^2 2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +2*Z*Dz +dD^2
+Y = (Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dy) +(2*Z*Dz)/(-2*Dy)
+
+(Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cy) +(2*Z*Cz)/(-2*Cy) = (Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dy) +(2*Z*Dz)/(-2*Dy)
+(2*Z*Cz)/(-2*Cy) -(2*Z*Dz)/(-2*Dy) = (Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dy) - (Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cy)
+Z*((2*Cz)/(-2*Cy)-(2*Dz)/(-2*Dy)) = (Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dy) - (Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cy)
+Z = ((Bx^2 -2*X*Bx -dB^2 -Dx^2 -Dy^2 -Dz^2 +2*X*Dx +dD^2)/(-2*Dy) - (Bx^2 -2*X*Bx -dB^2 -Cx^2 -Cy^2 -Cz^2 +2*X*Cx +dC^2)/(-2*Cy))/((2*Cz)/(-2*Cy)-(2*Dz)/(-2*Dy))
+Z = ((Bx^2 +X*(2*Dx-2*Bx) -dB^2 -Dx^2 -Dy^2 -Dz^2 +dD^2)/(-2*Dy) - (Bx^2 +X*(2*Cx-2*Bx) -dB^2 -Cx^2 -Cy^2 -Cz^2 +dC^2)/(-2*Cy))/((2*Cz)/(-2*Cy)-(2*Dz)/(-2*Dy))
+Z = ((Bx^2 +((dA^2 +Bx^2 -dB^2)/(2*Bx))*(2*Dx - 2*Bx) -dB^2 -Dx^2 -Dy^2 -Dz^2 +dD^2)/(-2*Dy) - (Bx^2 +((dA^2 +Bx^2 -dB^2)/(2*Bx))*(2*Cx - 2*Bx) -dB^2 -Cx^2 -Cy^2 -Cz^2 +dC^2)/(-2*Cy))/((2*Cz)/(-2*Cy)-(2*Dz)/(-2*Dy))

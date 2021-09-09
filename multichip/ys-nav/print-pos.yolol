@@ -1,0 +1,20 @@
+q=1000 x="YS.Nav\nX: " y="\nY: " z="\nZ: " v="\nVel: " t="\nDis: "
+:pos=x+:x/q*q+y+:y/q*q+z+:z/q*q+v+:v+" m/s"+t+:TD*q/q goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Chip: Basic
+// YS.Nav EA v1.0.2 -MC- Print Position
+// Developed by Senkii & TheLegendOfWolf

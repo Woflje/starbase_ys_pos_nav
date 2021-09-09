@@ -1,0 +1,20 @@
+:TD=((:x-:tx)^2 +(:y-:ty)^2 +(:z-:yz)^2)^0.5 goto1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Chip: Advanced
+// YS.Nav EA v1.0.2 -MC- Calculate Target Distance
+// Developed by Senkii & TheLegendOfWolf

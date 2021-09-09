@@ -1,0 +1,20 @@
+r=1000000 a=r*100 i=5.879 j=382.119 k=:k oy=0 k=-4585.4+oy
+:y=(i*(:dA-:dB)+j*(:dD-:dC))/a+k :dD=(r-:s4)*(r-:s4) goto2-:rt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Chip: Basic
+// YS.Nav EA v1.0.2 -MC- Calculate Y, Receiver 4
+// Developed by Senkii & TheLegendOfWolf
