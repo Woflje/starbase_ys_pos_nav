@@ -288,7 +288,7 @@ To be able to determine one's position in Starbase, we use multilateration.
 This is a method that allows us to calculate your position in 3D space, if the coordinates of
 four points that are not on a plane, and the distances from you to those points are known.<br>
 A visualisation of this method can be seen in the animation below:
-![Beautiful Gif that does not work now for some reason :/](https://i.imgur.com/Ad1VuH2.gif)
+![Beautiful Gif that does not work now for some reason :/](https://imgur.com/8dbL7gW.gif)
 
 ### Origin Transmitter Coordinates: Setting up a coordinate system
 
