@@ -85,7 +85,7 @@ The purpose of the multi-chip version is to put the calculations in parallel, wh
 
 #### Setup
 
-Connect 4 receivers anywhere on your ship and change the following data on all of:
+Connect 4 receivers anywhere on your ship and change the following data on all of them:
 | Original name | New name | Value |
 | - | - | - |
 | ListenAngle | - | 180 |
