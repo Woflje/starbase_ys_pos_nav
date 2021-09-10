@@ -92,7 +92,7 @@ Connect 4 receivers anywhere on your ship and change the following data on all o
 | TargetFrequency | - | 1 |
 | Frequency | - | 0 |
 
-Then change the data per receivers accordingly:
+Then change the data per receiver accordingly:
 | Receiver nr. | Original name | New name | Value |
 | - | - | - | - |
 | 1 | SignalStrength | s1 | - |
@@ -212,7 +212,7 @@ Connect 4 receivers close together and **as far as possible to the center-front 
 | TargetFrequency | - | 1 |
 | Frequency | - | 0 |
 
-Then change the data per receivers accordingly:
+Then change the data per receiver accordingly:
 | Receiver nr. | Original name | New name | Value |
 | - | - | - | - |
 | 1 | SignalStrength | s1 | - |
