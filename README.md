@@ -181,7 +181,7 @@ Connect a text panel anywhere on your ship and change the following data:
 
 Connect a toggle-button with name `T`.
 
-Connect a toggle-button with name `C` and change the `Cruise` name in the `fcu` to `C`.
+Connect a toggle-button with name `C`, OnState `0` and OffState `40`, and change the `Cruise` name in the forward lever (previously `FcuForward`, now `fwd`) to `C` as well.
 
 Change the following names in the FCU (Note: After this you will have to remap your controls!):
 
@@ -198,7 +198,7 @@ Connect an advanced (or better) yolol chip anywhere on your ship and put in the 
 Change the values of `tx`, `ty` and `tz` to your desired destination coordinates.<br>
 Enable `T` when your ship is static and the ship will try to aim the receiver to the destination.<br>
 Disable `T` to stop and switch to manual control.<br>
-After some time (It can take long due to script lag), it will fly by setting `fwd` to `100` and turn on `C` (Before `Cruise`).<br>
+After some time (It can take long due to script lag), it will fly by setting `fwd` to `100` and turn on Cruise mode (set `C` to 0).<br>
 If your ship flies too far off-route (The target distance is increasing instead of decreasing) it will restart the navigation.<br>
 If your ship is within `TD` meters (Default: 600m), it will disable `T`, as you have arrived at your destination!<br>
 *Hint: Do not use outside the safezone*
