@@ -191,7 +191,7 @@ Change the following names in the FCU (Note: After this you will have to remap y
 | Yaw | y |
 | fcuForward | fwd |
 
-Connect a basic (or better) yolol chip anywhere on your ship and put in the script from [ys-nav.yolol](ys-nav.yolol).
+Connect an advanced (or better) yolol chip anywhere on your ship and put in the script from [ys-nav.yolol](ys-nav.yolol).
 
 #### Use
 
