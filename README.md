@@ -11,14 +11,18 @@ Ask questions and follow updates on the [YSuite Discord](https://discord.gg/GXvU
 
 | Module | File or Folder | Coordinates | Velocity | Nav | # Basic Chips | # Advanced Chips |
 | - | - | - | - | - | - | - |
-| YS.Pos SingleChip | `ys-pos.yolol` | Yes | No | No | 1 | - |
-| YS.Pos Velocity | `ys-pos-velocity.yolol` | Yes | Yes | No | - | 1 |
-| YS.Pos MultiChip | `/multichip/ys-pos/` | Yes | Yes | No | 4 | 1 |
-| YS.Nav SingleChip | `ys-nav.yolol` | Yes | Yes | Yes | - | 1 |
-| YS.Nav MultiChip | `/multichip/ys-nav/` | Yes | Yes | Yes | 6 | 2 |
+| YS.Pos SingleChip | [ys-pos.yolol](ys-pos.yolol) | Yes | No | No | 1 | - |
+| YS.Pos Velocity | [ys-pos-velocity.yolol](ys-pos-velocity.yolol) | Yes | Yes | No | - | 1 |
+| YS.Pos MultiChip | [/multichip/ys-pos/](/multichip/ys-pos/) | Yes | Yes | No | 4 | 1 |
+| YS.Nav SingleChip | [ys-nav.yolol](ys-nav.yolol) | Yes | Yes | Yes | - | 1 |
+| YS.Nav MultiChip | [/multichip/ys-nav/](/multichip/ys-nav/) | Yes | Yes | Yes | 6 | 2 |
 
-*Hint: For streaming, rename the yolol chip to `GPS`, and link a button to `GPS` to temporarily hide your location!*
+*Hint: For streaming, rename the yolol chip(s) to `GPS`, and link a button with OnState `0` and OffState `-1` to `GPS` to temporarily hide your location!*
 
+*Note: YS.pos and YS.nav are fully compatible with the new version of ISAN. This means you'll be able to navigate to the position of anyone, no matter what system they use!*
+
+
+<br><br><br>
 ## YS.Pos
 
 ![Beautiful Png that does not work now for some reason :/](https://i.imgur.com/JdqHd8N.png)
@@ -26,13 +30,15 @@ Ask questions and follow updates on the [YSuite Discord](https://discord.gg/GXvU
 Our answer to the question: <br>
 Where the f'ck am I!?
 
+
+<br><br>
 ### YS.Pos SingleChip
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
-| `ys-pos.yolol` | Basic | Calculate and display coordinates |
+| [ys-pos.yolol](ys-pos.yolol) | Basic | Calculate and display coordinates |
 
-The single chip version of YS.Pos can be found in `ys-pos.yolol`.
+The single chip version of YS.Pos can be found [here](ys-pos.yolol).
 This yolol script will output your X, Y and Z coordinates in-game!
 The script works on a basic chip.
 
@@ -53,34 +59,38 @@ Connect a text panel anywhere on your ship and change the following data:
 | PanelValue | Pos | - |
 | PanelVariableResolution | - | 1 |
 
-Connect a basic (or better) yolol chip anywhere on your ship and put in the script from `ys-pos.yolol`
+Connect a basic (or better) yolol chip anywhere on your ship and put in the script from [ys-pos.yolol](ys-pos.yolol).
 
+
+<br><br>
 ### YS.Pos Velocity
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
-| `ys-pos-velocity.yolol` | Advanced | Calculate and display coordinates and velocity |
+| [ys-pos-velocity.yolol](ys-pos-velocity.yolol) | Advanced | Calculate and display coordinates and velocity |
 
-The single chip version of YS.Pos can be found in `ys-pos-velocity.yolol`.
+The single chip version of YS.Pos Velocity can be found [here](ys-pos-velocity.yolol).
 This yolol script will output your X, Y and Z coordinates, and velocity in-game!
 The script requires at least an advanced chip.
-The velocity value may fluctuate a lot, and sadly is not due to the script.
+The velocity value may fluctuate a lot, and sadly this is not due to the script.
 
 #### Setup
 
-Follow the setup from YS.Pos SingleChip, but use `ys-pos-velocity.yolol` and an advanced chip instead.
+Follow the setup from YS.Pos SingleChip, but use [ys-pos-velocity.yolol](ys-pos-velocity.yolol) and an advanced chip instead.
 
+
+<br><br>
 ### YS.Pos MultiChip
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
-| `/multichip/ys-pos/calculate-v.yolol` | Advanced | Calculate velocity |
-| `/multichip/ys-pos/init-variables-z-x.yolol` | Basic | Initialize variables and calculate Z and X coordinates |
-| `/multichip/ys-pos/print-pos.yolol.yolol` | Basic | Print position information |
-| `/multichip/ys-pos/receiver-1-2-3.yolol` | Basic | Read signal from receivers 1-3 |
-| `/multichip/ys-pos/receiver-4-y.yolol` | Basic | Read signal from receiver 4 and calculate Y coordinate |
+| [/multichip/ys-pos/calculate-v.yolol](/multichip/ys-pos/calculate-v.yolol) | Advanced | Calculate velocity |
+| [/multichip/ys-pos/init-variables-z-x.yolol](/multichip/ys-pos/init-variables-z-x.yolol) | Basic | Initialize variables and calculate Z and X coordinates |
+| [/multichip/ys-pos/print-pos.yolol.yolol](/multichip/ys-pos/print-pos.yolol.yolol) | Basic | Print position information |
+| [/multichip/ys-pos/receiver-1-2-3.yolol](/multichip/ys-pos/receiver-1-2-3.yolol) | Basic | Read signal from receivers 1-3 |
+| [/multichip/ys-pos/receiver-4-y.yolol](/multichip/ys-pos/receiver-4-y.yolol) | Basic | Read signal from receiver 4 and calculate Y coordinate |
 
-The multi-chip version of YS.Pos can be found in `/multichip/ys-pos/`.
+The multi-chip version of YS.Pos can be found [here](/multichip/ys-pos/).
 The purpose of the multi-chip version is to put the calculations in parallel, which speeds up YS.Pos by a lot. It will give an output every line-duration (around 0.2 seconds). This version requires 4 receivers, 4 basic chips and 1 advanced chip.
 
 #### Setup
@@ -128,24 +138,29 @@ Put the following variablenames in static device fields (Memory chips)
 | z |
 | v |
 
+
+
+<br><br><br>
 ## YS.Nav
 
 ![Beautiful Png that does not work now for some reason :/](https://i.imgur.com/eFvGRqN.png)
 
 Did your friend give you their coordinates and do you just want to fly there without having to do anything?<br>
-YS.Nav has you covered! YS.Nav aims to provide automatic ship navigation for players.<br>
+YS.Nav has you covered! YS.Nav aims to provide automatic ship navigation for any player.<br>
 
 YS.Nav is an extension of YS.Pos, meaning it includes all features of YS.Pos!
 
-*YS.Nav assumes your ship has an FCU, forward thrusters, pitch and yaw thrusters.*
+*Note: YS.Nav assumes your ship has an FCU, forward thrusters, pitch and yaw thrusters.*
 
+
+<br><br>
 ### YS.Nav SingleChip
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
-| `ys-nav.yolol` | Advanced | Calculate and display coordinates, velocity and target distance + Autonavigation |
+| [ys-nav.yolol](ys-nav.yolol) | Advanced | Calculate and display coordinates, velocity and target distance + Autonavigation |
 
-The single-chip version is cheap but slow.<br>
+The single-chip version is cheap but slow. It can be found [here](ys-nav.yolol).<br>
 
 #### Setup
 
@@ -176,7 +191,7 @@ Change the following names in the FCU (Note: After this you will have to remap y
 | Yaw | y |
 | fcuForward | fwd |
 
-Connect a basic (or better) yolol chip anywhere on your ship and put in the script from `ys-nav.yolol`
+Connect a basic (or better) yolol chip anywhere on your ship and put in the script from [ys-nav.yolol](ys-nav.yolol).
 
 #### Use
 
@@ -188,20 +203,22 @@ If your ship flies too far off-route (The target distance is increasing instead 
 If your ship is within `TD` meters (Default: 600m), it will disable `T`, as you have arrived at your destination!<br>
 *Hint: Do not use outside the safezone*
 
+
+<br><br>
 ### YS.Nav MultiChip
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
-| `/multichip/ys-nav/calculate-target-distance.yolol` | Advanced | Calculate target distance |
-| `/multichip/ys-nav/calculate-v.yolol` | Advanced | Calculate velocity |
-| `/multichip/ys-nav/destinations.yolol` | Basic | Cycle through destinations (Note: For bus-use!) |
-| `/multichip/ys-nav/init-variables-z-x.yolol` | Basic | Initialize variables and calculate Z and X coordinates |
-| `/multichip/ys-nav/navigation.yolol` | Advanced | Navigation |
-| `/multichip/ys-nav/print-pos.yolol.yolol` | Basic | Print position information |
-| `/multichip/ys-nav/receiver-1-2-3.yolol` | Basic | Read signal from receivers 1-3 |
-| `/multichip/ys-nav/receiver-4-y.yolol` | Basic | Read signal from receiver 4 and calculate Y coordinate |
+| [/multichip/ys-nav/calculate-target-distance.yolol](/multichip/ys-nav/calculate-target-distance.yolol) | Advanced | Calculate target distance |
+| [/multichip/ys-nav/calculate-v.yolol](/multichip/ys-nav/calculate-v.yolol) | Advanced | Calculate velocity |
+| [/multichip/ys-nav/destinations.yolol](/multichip/ys-nav/destinations.yolol) | Basic | Cycle through destinations (Note: For bus-use!) |
+| [/multichip/ys-nav/init-variables-z-x.yolol](/multichip/ys-nav/init-variables-z-x.yolol) | Basic | Initialize variables and calculate Z and X coordinates |
+| [/multichip/ys-nav/navigation.yolol](/multichip/ys-nav/navigation.yolol) | Advanced | Navigation |
+| [/multichip/ys-nav/print-pos.yolol.yolol](/multichip/ys-nav/print-pos.yolol.yolol) | Basic | Print position information |
+| [/multichip/ys-nav/receiver-1-2-3.yolol](/multichip/ys-nav/receiver-1-2-3.yolol) | Basic | Read signal from receivers 1-3 |
+| [/multichip/ys-nav/receiver-4-y.yolol](/multichip/ys-nav/receiver-4-y.yolol) | Basic | Read signal from receiver 4 and calculate Y coordinate |
 
-The multi-chip version of YS.Nav is a lot faster than the single-chip version!
+The multi-chip version of YS.Nav is a lot faster than the single-chip version! You can find this version [here](/multichip/ys-nav/).
 
 #### Setup
 
@@ -231,7 +248,7 @@ Connect a text panel anywhere on your ship and change the following data:
 | PanelVariableResolution | - | 1 |
 
 Install all yolol chips on the ship.<br>
-Install the `destinations.yolol` only when aiming to cycle through destinations like a bus!
+Install the [destinations.yolol](destinations.yolol) chip only when aiming to cycle through destinations like a bus!
 
 Put the following variablenames in static device fields (Memory chips)
 
@@ -276,10 +293,13 @@ If your ship is within `OK` meters (Default: 200m), it will disable `Nav`, as yo
 
 #### Use as bus
 
-Make sure you have the `destinations.yolol` installed.<br>
+Make sure you have the [destinations.yolol](destinations.yolol) installed.<br>
 In there, change the different target coordinates to make multiple stops.<br>
-In `navigation.yolol` remove `:Nav=(:TD<:OK)` from line 7.
+In [navigation.yolol](navigation.yolol) remove `:Nav=(:TD<:OK)` from line 7.
 
+
+
+<br><br><br>
 ## Math
 
 Curious about the math behind YS.Pos and YS.Nav?
@@ -290,11 +310,13 @@ four points that are not on a plane, and the distances from you to those points 
 A visualisation of this method can be seen in the animation below:
 ![Beautiful Gif that does not work now for some reason :/](https://imgur.com/8dbL7gW.gif)
 
+
+<br><br>
 ### Origin Transmitter Coordinates: Setting up a coordinate system
 
 Luckily, the FrozenByte Developers put 4 fixed transmitters in the universe, which are not on one plane!
 We cannot immediately assign coordinates to the transmitters. First we have to measure the signal strength differences between all transmitters.
-This gives us the data that can be seen in `/data/measurement_data_and_coordinate_calculations.xlsx`, B3 to G6.
+This gives us the data that can be seen in [/data/measurement_data_and_coordinate_calculations.xlsx](/data/measurement_data_and_coordinate_calculations.xlsx), B3 to G6.
 These are the measurements done from both sides of the transmitter (The transmitter is a physical entity, disabling us from putting a receiver inside to measure the correct signal strength difference) and from both transmitters, A to B and B to A for example.
 The averages are taken and shown in B7 to G7.<br>
 The converted values (MaximumSignalStrength-signalstrength = 1000000-signalstrength) are shown in B8 to G8.<br>
@@ -317,17 +339,19 @@ Therefore, it is best to put A and B on the X-axis and put A in the origin. This
 
 Then the X-coordinate can be found by evaluating `Sphere_A_C = Sphere_B_C`, and the same can be done for D.
 
-Here, things get difficult as C and D do not share the same X-Coordinate in our coordinate system. Luckily, stating that C and D share the same Z-Coordinate, the Z-Axis will be pointing roughly towards the belt, which is convenient. If we also state that their Z-Coordinate is positive, we can use an algorithm to find a Cz=Dz such that distance(C to D) corresponds to the measured value. The algorithm used for this can be found in `/data/find_coords.py`. The algorithm starts from a guessed value of Z and evaluates the increasing Z value each time by calculating the Y-Coordinates of C and D with it and evaluating if distance(C to D) is as close to the measured value as possible.
+Here, things get difficult as C and D do not share the same X-Coordinate in our coordinate system. Luckily, stating that C and D share the same Z-Coordinate, the Z-Axis will be pointing roughly towards the belt, which is convenient. If we also state that their Z-Coordinate is positive, we can use an algorithm to find a Cz=Dz such that distance(C to D) corresponds to the measured value. The algorithm used for this can be found in [/data/find_coords.py](/data/find_coords.py). The algorithm starts from a guessed value of Z and evaluates the increasing Z value each time by calculating the Y-Coordinates of C and D with it and evaluating if distance(C to D) is as close to the measured value as possible.
 
 Then, all the coordinates of the transmitters have been calculated or found and can be seen in B11 to E13. This creates the following model:<br>
 ![Beautiful Gif that does not work now for some reason :/](https://i.imgur.com/cvCRb1k.gif)
 
-To play around with it or have a closer look, go to [GeoGebra](https://www.geogebra.org/calculator) and open the `/data/model_geogebra.ggb` file.
+To play around with it or have a closer look, go to [GeoGebra](https://www.geogebra.org/calculator) and open the [/data/model_geogebra.ggb](/data/model_geogebra.ggb) file.
 
+
+<br><br>
 ### Calculations and equations
 
-Now that we have the coordinates of all transmitters and can measure the distance to each of them In-Game with a receiver, we can perform calculations and setup equations for multilateration. The calculations can be found in `/data/calculations.txt`.<br>
-A MATLAB script is used to form the most simplified equations from the calculations. This script can be found in `/data/equations.m`.<br>
-Another MATLAB script can be used to test the equations from the calculations text file and can be found in `/data/test_calculations.m`.
+Now that we have the coordinates of all transmitters and can measure the distance to each of them In-Game with a receiver, we can perform calculations and setup equations for multilateration. The calculations can be found in [/data/calculations.txt](/data/calculations.txt).<br>
+A MATLAB script is used to form the most simplified equations from the calculations. This script can be found in [/data/equations.m](/data/equations.m).<br>
+Another MATLAB script can be used to test the equations from the calculations text file and can be found in [/data/test_calculations.m](/data/test_calculations.m).
 
 This + lots of coffee + late nights = code
