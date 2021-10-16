@@ -9,7 +9,7 @@ x=b*(dA-dB)/a+c z=(l*dA+e*dB-f*dC-g*d)/a+h y=(i*(dA-dB)+j*(d-dC))/a+k
 cb=mb mb=r-:s :tm=m1 dB=((mb+(mb-cb)*3/4))^2 ok=(T^0.5)/q*q u=u*u>0
 ve=((x-xo)^2+(y-yo)^2+(z-zo)^2)/nv xo=x yo=y zo=z kz=(ku>2) goto11-wu
 ca=ma ma=r-:s :tm=m3 dA=((ma+(ma-ca)*2))^2 v5=vp+ve^hf+" m/s"+t+ok
-To=T T=(tx-x)^2+(ty-y)^2+(tz-z)^2 u+=w*T>To l=To==T goto13+5*(T<TD)*:T
+To=T T=(tx-x)^2+(ty-y)^2+(tz-z)^2 u+=w*T>To o=To==T goto13+5*(T<TD)*:T
 cc=mc mc=r-:s :tm=m4 dC=((mc+(mc-cc)/4))^2 goto14+4*(u>5)*:T nv=1.66
 :Pos=xp+x/q*q+yp+y/q*q+zp+z/q*q+v5 goto7+8*kz*:T*v
 pc=pm+ps/cl pu=p p=p+2*(Tu<T) Tu=T :p=pc*(p*(p<3)-(pu!=p)*(p==3))
