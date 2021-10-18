@@ -1,20 +1,20 @@
 ox=0 oy=0 oz=0 s="origin_" pm=1 ps=99 cl=1 nv=1.66 xp="\nYS.Nav\nX: "
 r=1000000 b=413.449 c=-2480.7+ox l=582.633 e=685.324 f=677.729 q=1000
-g=590.229 h=7970.4+oz i=5.879 j=382.119 k=-2328+oy md=0 a=100*r
-m1=s+"east" m2=s+"west" m3=s+"north" m4=s+"south" :tm=m4 TD=600^2
-tx=0 ty=0 tz=0
+g=590.229 h=7970.4+oz i=5.879 j=382.119 k=-2328+oy md=0 a=100*r :C=100
+m1=s+"east" m2=s+"west" m3=s+"north" m4=s+"south" :tm=m4 TD=400^2
+:fwd=0 v4=" m/s\nD: " tx=0 ty=0 tz=0
 u=0 p=-1 v=1 w=0 n=0 hf=0.5 yp="\nY: " zp="\nZ: " vp="\nV: "
-cd=md md=r-:s :tm=m2 d=(md)^2 wu=10*(T2!=:T) T2=:T ku+=o u-=w*T<To
+cd=md md=r-:s :tm=m2 d=(md)^2 wu=10*(T2!=:T) T2=:T ku+=o u-=w*(T<To)
 x=b*(dA-dB)/a+c z=(l*dA+e*dB-f*dC-g*d)/a+h y=(i*(dA-dB)+j*(d-dC))/a+k
-cb=mb mb=r-:s :tm=m1 dB=((mb+(mb-cb)*3/4))^2 ok=(T^hf)/q*q u=u*u>0
+cb=mb mb=r-:s :tm=m1 dB=((mb+(mb-cb)*3/4))^2 ok=(T^hf)/q*q u=u*(u>0)
 ve=((x-xo)^2+(y-yo)^2+(z-zo)^2)/nv xo=x yo=y zo=z kz=(ku>2) goto11-wu
-ca=ma ma=r-:s :tm=m3 dA=((ma+(ma-ca)*2))^2 v5=" m/s\nD: "+ok
-To=T T=(tx-x)^2+(ty-y)^2+(tz-z)^2 u+=w*T>To o=To==T goto13+5*(T<TD)*:T
-cc=mc mc=r-:s :tm=m4 dC=((mc+(mc-cc)/4))^2 nv=1.66 goto14+4*(u>5)*:T
-:Pos=xp+x/q*q+yp+y/q*q+zp+z/q*q+vp+ve^hf/q*q+v5 goto7+8*kz*:T*v
+ca=ma ma=r-:s :tm=m3 dA=((ma+(ma-ca)*2))^2 u+=w*(T>To)
+To=T T=(tx-x)^2+(ty-y)^2+(tz-z)^2 o=To==T goto13+5*(T<TD)*:T
+cc=mc mc=r-:s :tm=m4 dC=((mc+(mc-cc)/4))^2 nv=1.66 goto14+4*(u>1)*:T
+:Pos=xp+x/q*q+yp+y/q*q+zp+z/q*q+vp+ve^hf/q*q+v4+ok goto7+8*kz*:T*v
 pc=pm+ps/cl pu=p p=p+2*(Tu<T) Tu=T :p=pc*(p*(p<3)-(pu!=p)*(p==3))
 :y=pc*((p-6)*(p>4)*(p<8)-(pu!=p)*(p>8)) :p=0 p+=2*(p==3) n+=1 ku=0
 :y=0 ip=(n<10)*(p>8) cl=cl+15*ip nv=2.28 goto6+(p<8)+12*ip*(pc<5)
-:fwd=100*v :C=4*(1-v) u=0 no=1-v v=0 w=1 :T=T>TD goto7-6*(:T<1)-6*no
+:fwd=100*v :C=100*(1-v) u=0 no=1-v v=0 w=1 :T=T>TD goto7-6*(:T<1)-6*no
 // YS.Nav EA v1.0.2 -SingleChip-     Chip: Advanced
 // Developed by Senkii & TheLegendOfWolf
