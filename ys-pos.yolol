@@ -1,6 +1,6 @@
 ox=0 oy=0 oz=0 s="origin_"
-r=1000000 b=413.449 c=60467+ox l=582.633 e=685.324 f=677.729 q=1000
-g=590.229 h=27687+oz i=5.879 j=382.119 k=-4585.4+oy md=0 a=100*r
+r=1000000 b=413.449 c=-2480.7+ox l=582.633 e=685.324 f=677.729 q=1000
+g=590.229 h=7970.4+oz i=5.879 j=382.119 k=-2328+oy md=0 a=100*r
 m1=s+"east" m2=s+"west" m3=s+"north" m4=s+"south" :tm=m4
 cd=md md=r-:s :tm=m2 d=md*md xo=x yo=y zo=z
 x=b*(dA-dB)/a+c z=(l*dA+e*dB-f*dC-g*d)/a+h y=(i*(dA-dB)+j*(d-dC))/a+k

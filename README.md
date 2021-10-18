@@ -154,7 +154,7 @@ YS.Nav is an extension of YS.Pos, meaning it includes all features of YS.Pos!
 
 
 <br><br>
-### YS.Nav SingleChip
+### YS.Nav SingleChip (WIP)
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
@@ -205,7 +205,7 @@ If your ship is within `TD` meters (Default: 600m), it will disable `T`, as you 
 
 
 <br><br>
-### YS.Nav MultiChip
+### YS.Nav MultiChip (WIP)
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
