@@ -80,7 +80,7 @@ Follow the setup from YS.Pos SingleChip, but use [ys-pos-velocity.yolol](ys-pos-
 
 
 <br><br>
-### YS.Pos MultiChip
+### YS.Pos MultiChip (WIP)
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
@@ -154,7 +154,7 @@ YS.Nav is an extension of YS.Pos, meaning it includes all features of YS.Pos!
 
 
 <br><br>
-### YS.Nav SingleChip (WIP)
+### YS.Nav SingleChip
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
