@@ -9,13 +9,13 @@ Made with love by Senkii & ThelegendofWolf
 Welcome to the code branch of the [Starbase](https://store.steampowered.com/app/454120/Starbase/): YSuite - YS.Pos & YS.Nav.
 Ask questions and follow updates on the [YSuite Discord](https://discord.gg/GXvUksW).
 
-| Module | File or Folder | Coordinates | Velocity | Nav | # Basic Chips | # Advanced Chips |
-| - | - | - | - | - | - | - |
-| [YS.Pos SingleChip](#yspos-singlechip) | [ys-pos.yolol](ys-pos.yolol) | Yes | No | No | 1 | - |
-| [YS.Pos Velocity](#yspos-velocity) | [ys-pos-velocity.yolol](ys-pos-velocity.yolol) | Yes | Yes | No | - | 1 |
-| [YS.Pos MultiChip](#yspos-multichip) | [/multichip/ys-pos/](/multichip/ys-pos/) | Yes | Yes | No | 4 | 1 |
-| [YS.Nav SingleChip](#ysnav-singlechip) | [ys-nav.yolol](ys-nav.yolol) | Yes | Yes | Yes | - | 1 |
-| [YS.Nav MultiChip](#ysnav-multichip) | [/multichip/ys-nav/](/multichip/ys-nav/) | Yes | Yes | Yes | 6 | 2 |
+| Module | File or Folder | Coordinates | Velocity | Nav | # Basic Chips | # Advanced Chips | State |
+| - | - | - | - | - | - | - | - |
+| [YS.Pos SingleChip](#yspos-singlechip) | [ys-pos.yolol](ys-pos.yolol) | Yes | No | No | 1 | - | Ready |
+| [YS.Pos Velocity](#yspos-velocity) | [ys-pos-velocity.yolol](ys-pos-velocity.yolol) | Yes | Yes | No | - | 1 | Ready |
+| [YS.Pos MultiChip](#yspos-multichip-wip) | [/multichip/ys-pos/](/multichip/ys-pos/) | Yes | Yes | No | 4 | 1 | Not Ready |
+| [YS.Nav SingleChip](#ysnav-singlechip) | [ys-nav.yolol](ys-nav.yolol) | Yes | Yes | Yes | - | 1 | Ready |
+| [YS.Nav MultiChip](#ysnav-multichip-wip) | [/multichip/ys-nav/](/multichip/ys-nav/) | Yes | Yes | Yes | 6 | 2 | Not Ready |
 
 *Hint: For streaming, rename the yolol chip(s) to `GPS`, and link a button with OnState `0` and OffState `-1` to `GPS` to temporarily hide your location!*
 
