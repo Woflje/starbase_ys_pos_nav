@@ -248,7 +248,7 @@ Connect a text panel anywhere on your ship and change the following data:
 | PanelVariableResolution | - | 1 |
 
 Install all yolol chips on the ship.<br>
-Install the [destinations.yolol](destinations.yolol) chip only when aiming to cycle through destinations like a bus!
+Install the [destinations.yolol](/multichip/ys-nav/destinations.yolol) chip only when aiming to cycle through destinations like a bus!
 
 Put the following variablenames in static device fields (Memory chips)
 
