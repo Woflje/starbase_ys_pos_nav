@@ -293,7 +293,7 @@ If your ship is within `OK` meters (Default: 200m), it will disable `Nav`, as yo
 
 #### Use as bus
 
-Make sure you have the [destinations.yolol](destinations.yolol) installed.<br>
+Make sure you have the [/multichip/ys-nav/destinations.yolol](destinations.yolol) installed.<br>
 In there, change the different target coordinates to make multiple stops.<br>
 In [navigation.yolol](navigation.yolol) remove `:Nav=(:TD<:OK)` from line 7.
 
