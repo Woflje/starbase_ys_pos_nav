@@ -9,13 +9,13 @@ Made with love by Senkii & ThelegendofWolf
 Welcome to the code branch of the [Starbase](https://store.steampowered.com/app/454120/Starbase/): YSuite - YS.Pos & YS.Nav.
 Ask questions and follow updates on the [YSuite Discord](https://discord.gg/GXvUksW).
 
-| Module | File or Folder | Coordinates | Velocity | Nav | # Basic Chips | # Advanced Chips |
-| - | - | - | - | - | - | - |
-| [YS.Pos SingleChip](#yspos-singlechip) | [ys-pos.yolol](ys-pos.yolol) | Yes | No | No | 1 | - |
-| [YS.Pos Velocity](#yspos-velocity) | [ys-pos-velocity.yolol](ys-pos-velocity.yolol) | Yes | Yes | No | - | 1 |
-| [YS.Pos MultiChip](#yspos-multichip) | [/multichip/ys-pos/](/multichip/ys-pos/) | Yes | Yes | No | 4 | 1 |
-| [YS.Nav SingleChip](#ysnav-singlechip) | [ys-nav.yolol](ys-nav.yolol) | Yes | Yes | Yes | - | 1 |
-| [YS.Nav MultiChip](#ysnav-multichip) | [/multichip/ys-nav/](/multichip/ys-nav/) | Yes | Yes | Yes | 6 | 2 |
+| Module | File or Folder | Coordinates | Velocity | Nav | # Basic Chips | # Advanced Chips | State |
+| - | - | - | - | - | - | - | - |
+| [YS.Pos SingleChip](#yspos-singlechip) | [ys-pos.yolol](ys-pos.yolol) | Yes | No | No | 1 | - | Ready |
+| [YS.Pos Velocity](#yspos-velocity) | [ys-pos-velocity.yolol](ys-pos-velocity.yolol) | Yes | Yes | No | - | 1 | Ready |
+| [YS.Pos MultiChip](#yspos-multichip-wip) | [/multichip/ys-pos/](/multichip/ys-pos/) | Yes | Yes | No | 4 | 1 | Not Ready |
+| [YS.Nav SingleChip](#ysnav-singlechip) | [ys-nav.yolol](ys-nav.yolol) | Yes | Yes | Yes | - | 1 | Ready |
+| [YS.Nav MultiChip](#ysnav-multichip-wip) | [/multichip/ys-nav/](/multichip/ys-nav/) | Yes | Yes | Yes | 6 | 2 | Not Ready |
 
 *Hint: For streaming, rename the yolol chip(s) to `GPS`, and link a button with OnState `0` and OffState `-1` to `GPS` to temporarily hide your location!*
 
@@ -80,7 +80,7 @@ Follow the setup from YS.Pos SingleChip, but use [ys-pos-velocity.yolol](ys-pos-
 
 
 <br><br>
-### YS.Pos MultiChip
+### YS.Pos MultiChip (WIP)
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
@@ -154,7 +154,7 @@ YS.Nav is an extension of YS.Pos, meaning it includes all features of YS.Pos!
 
 
 <br><br>
-### YS.Nav SingleChip (WIP)
+### YS.Nav SingleChip
 
 | Yolol File | Chip | Purpose |
 | - | - | - |
@@ -248,7 +248,7 @@ Connect a text panel anywhere on your ship and change the following data:
 | PanelVariableResolution | - | 1 |
 
 Install all yolol chips on the ship.<br>
-Install the [destinations.yolol](destinations.yolol) chip only when aiming to cycle through destinations like a bus!
+Install the [destinations.yolol](/multichip/ys-nav/destinations.yolol) chip only when aiming to cycle through destinations like a bus!
 
 Put the following variablenames in static device fields (Memory chips)
 
@@ -293,9 +293,9 @@ If your ship is within `OK` meters (Default: 200m), it will disable `Nav`, as yo
 
 #### Use as bus
 
-Make sure you have the [destinations.yolol](destinations.yolol) installed.<br>
+Make sure you have the [destinations.yolol](/multichip/ys-nav/destinations.yolol) installed.<br>
 In there, change the different target coordinates to make multiple stops.<br>
-In [navigation.yolol](navigation.yolol) remove `:Nav=(:TD<:OK)` from line 7.
+In [navigation.yolol](/multichip/ys-nav/navigation.yolol) remove `:Nav=(:TD<:OK)` from line 7.
 
 
 
